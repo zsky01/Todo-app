@@ -1,0 +1,55 @@
+/*noinspection CssInvalidAtRule*/
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Typography */
+    --family: 'Josefin Sans', sans-serif;
+    --fs: 18px;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* Other */
+    --radii: 0.5rem;
+
+    --bg-gradient: linear-gradient(135deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
+    --primary-colors: hsl(220, 98%, 61%);
+}
+
+body[data-theme='dark'] {
+    --colors-bg: hsl(235, 21%, 11%);
+    --colors-item-bg: hsl(235, 24%, 19%);
+    --colors-text: hsl(236, 33%, 92%);
+    --colors-2: hsl(234, 11%, 52%);
+    --colors-1: hsl(233, 14%, 35%);
+}
+
+body[data-theme='light'] {
+    --colors-item-bg: hsl(0, 0%, 98%);
+    --colors-bg: hsl(236, 33%, 92%);
+    --colors-1: hsl(233, 11%, 84%);
+    --colors-2: hsl(236, 9%, 61%);
+    --colors-text: hsl(235, 19%, 35%);
+}
+
+body {
+    margin: 0;
+    font-family: var(--family);
+    color: var(--colors-text);
+    font-weight: var(--fw-normal);
+    background-color: var(--colors-bg);
+}
+
+#root {
+    position: relative;
+}
+
+input {
+    font-family: var(--family);
+    font-size: var(--fs);
+    color: var(--colors-text);
+}
