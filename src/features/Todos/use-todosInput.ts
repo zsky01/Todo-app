@@ -7,7 +7,7 @@ const useTodosInput = () => {
   const inputTodo = useRef<HTMLInputElement>(null);
 
   const handleEnter = (event: React.KeyboardEvent) => {
-    if (event.code === "Enter" || event.code === "NumpadEnter") {
+    if (event.code === "Enter" || event.code === "NumpadEnter" || event.keyCode === 13) {
       event.preventDefault();
       if (inputTodo.current) {
         const value = inputTodo.current?.value;
