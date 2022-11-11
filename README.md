@@ -2,6 +2,8 @@ Todo app
 
 The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.
 
+Demo: https://todo-app-self-gamma.vercel.app/
+
 Challenge: https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW
 
 Users have the ability to:
